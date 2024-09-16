@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "EB Garamond", serif !important; 
+    background-color: rgba(247, 235, 220, 0.563);
+}
+
+header{
+    background-image: linear-gradient(#000000aa, #00000056), url(94522ba1.jpeg);
+    background-position: center;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    flex-direction: column;
+    background-size: cover;
+}
+
+
+
+
+.navigation a{
+    text-decoration: none;
+    color: antiquewhite;
+    margin-bottom: 60px;
+    font-size: 22px;
+}
+
+.navigation a:hover{
+    transform: scale(1.2);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.navigation{
+    display: flex;
+    gap: 40px;
+}
+
+.portret{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    border: 1px solid antiquewhite; 
+}
+
+.portret{
+    filter: brightness(85%);
+}
+
+h1{
+    color: antiquewhite;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+
+.skils{
+    display: flex;
+    gap: 15px;
+}
+
+.skils h3{
+    color: antiquewhite; 
+}
+
+.resum{
+    display: flex;
+    gap: 60px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.resum h2{
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.resum h3{
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.resum p{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.second-section{
+    display: flex;
+    margin-top: 60px;
+    gap: 40px;
+    justify-content: end;
+}
+
+
+
+.resum ul{
+    font-size: 22px;
+    line-height: 30px;
+    list-style: inside;
+}
+
+.first-list{
+    list-style: none;
+}
+
+.second-section-skils{
+    width: 700px;
+}
+
+.aducation{
+margin-top: -220px;
+padding-right: 40px;
+box-sizing: border-box;
+}
+
+
+
+.portfolio h2{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 80px;
+    font-weight: 700;
+}
+
+.portfolio-works{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 40px 30px;
+    justify-content: center;
+
+}
+
+.first-work img, .second-work img, .third-work img, .fourth-work img, .fird-work img, .sixth-work img, .seventh-work img, .eighth-work img, .ninth-work img, .tenth-work img, .eleventh-work img, .twelfth-work img{
+    width: 400px;
+    height: 190px;
+    border: 1px solid rgba(0, 0, 0, 0.268);
+    
+}
+.first-work, .second-work, .third-work, .fourth-work, .fird-work, .sixth-work, .seventh-work, .eighth-work, .ninth-work, .tenth-work, .eleventh-work, .twelfth-work {
+    text-align: center;
+}
+
+.first-work p, .second-work p, .third-work p, .fourth-work p, .fird-work p, .sixth-work p, .seventh-work p, .eighth-work p, .ninth-work p, .tenth-work p, .eleventh-work p, .twelfth-work p{
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+
+.about-me h2{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 80px;
+    font-weight: 700;
+}
+
+.about-me p{
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-indent: 40px;
+}
+
+.about-me{
+    margin-bottom: 60px;
+}
+
+
+
+
+
+footer{
+    background-image: linear-gradient(#0000005a, #000000aa), url(94522ba1.jpeg);
+    background-position: center;
+    height: 260px;
+    color: rgba(247, 235, 220, 0.86);
+    font-weight: 200;
+}
+
+.footer-text{
+    font-size: 20px;
+    margin-left: 20px;
+    padding-top: 20px;
+    letter-spacing: 1.5px;
+}
+
+.line{
+    border: 0.5px solid antiquewhite;
+    margin: 20px 50px;
+}
+
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.social-links a img{
+    width: 50px;
+    filter: invert(1);
+}
+
+.social-links a img:hover{
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+@media screen and (max-width: 1300px) {
+    .portfolio-works{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .second-section{
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .aducation{
+        margin-top: 20px;
+        padding-right: 40px;
+        box-sizing: border-box;
+        }
+
+}
+
+@media screen and (max-width: 900px) {
+    .portfolio-works{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .second-section-skils{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navigation a{
+        font-size: 18px;
+    }
+
+    .navigation{
+        gap: 30px;
+    }
+
+    .portret{
+        height: 150px;
+        width: 150px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    header{
+        height: 370px;
+    }
+
+    .resum h2{
+        font-size: 28px;
+    }
+    
+    .resum h3{
+        font-size: 22 px;
+    }
+    
+    .resum p{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .resum ul{
+        font-size: 20px;
+    }
+
+    .portfolio h2{
+        font-size: 28px;
+        margin-top: 40px;
+    }
+
+    .about-me h2{
+        font-size: 28px;
+    }
+
+    .about-me p{
+        font-size: 20px;
+    }
+    
+    .about-me{
+        margin-bottom: 60px;
+        margin: 20px;
+    }
+    .footer-text{
+        font-size: 16px;
+        margin-left: 10px;
+        letter-spacing: 1.0px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .navigation a{
+        font-size: 18px;
+    }
+
+    .navigation{
+        gap: 20px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+    .resum{
+        gap: 25px;
+    }
+
+    .second-section{
+        gap: 20px;
+    }
+
+    .resum p{
+        font-size: 16px;
+        margin-bottom: 15px;
+        line-height: 20px;
+    }
+
+    .resum ul{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .resum h2{
+        font-size: 24px;
+    }
+
+    .portfolio h2{
+        font-size: 24px;
+        margin-top: 40px;
+    }
+    .first-list h3{
+        font-size: 20px;
+    }
+    .about-me h2{
+        font-size: 24px;
+    }
+
+    .about-me p{
+        font-size: 16px;
+    }
+
+
+    
+    .about-me{
+        margin-bottom: 60px;
+        margin: 20px;
+    }
+    .footer-text{
+        font-size: 16px;
+        margin-left: 10px;
+        letter-spacing: 1.0px;
+    }
+    .first-work img, .second-work img, .third-work img, .fourth-work img, .fird-work img, .sixth-work img, .seventh-work img, .eighth-work img, .ninth-work img, .tenth-work img, .eleventh-work img, .twelfth-work img{
+        width: 300px;
+        height: 150px;
+    }
+    .social-links a img{
+        width: 30px;
+    }
+
+    footer{
+
+        height: 230px;
+
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navigation a{
+        font-size: 16px;
+    }
+
+    .navigation{
+        gap: 15px;
+    }
+
+    header{
+        padding-top: 20px;
+    }
+
+}
+
+
+
